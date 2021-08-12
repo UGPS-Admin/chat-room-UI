@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Overlock&display=swap");
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    background-image: url("../img/login-screen-background.jpg") ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Nunito", sans-serif;
+}
+
+header{
+    background-color: aliceblue;
+    padding: .5rem;
+}
+
+header h1{
+    margin: .5rem;
+    text-align: center;
+}
+
+main.container{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+form.login-form{
+    padding: 65px 15px 54px 15px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+form.login-form h2{
+    color: #333;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 50px;
+    font-family: "Overlock", cursive;
+}
+
+form.login-form label{
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    padding-left: 10px;
+}
+
+form.login-form input{
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: 0 0;
+    color: #333;
+    font: 16px;
+    line-height: 1.2;
+    padding: 0 .5rem;
+    padding-left: 30px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #d9d9d9;
+    margin-bottom: 50px;
+}
+
+form.login-form button{
+    width: 100%;
+    height: 50px;
+    font-family: "Overlock", cursive;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-left: .7rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 30px 0 #d9d9d9;
+    background-image: url("../img/login-screen-background.jpg");
+    background-position: center center;
+    color: #fff;
+}
+
+@media screen and (min-width: 480px) and (max-width:768px) {
+    main.container{
+        width: 478px;
+        height: 88vh;
+        margin: auto;
+        padding: 15px 0;
+    }   
+
+    form.login-form{
+        padding: 45px 15px 54px 15px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width:769px){
+    main.container{
+        width: 500px;
+        min-height: 88vh;
+        margin: auto;
+        padding: 2rem 0;
+    }
+
+    form.login-form{
+        padding: 40px 15px 54px 15px;
+        border-radius: 8px;
+    }
+}

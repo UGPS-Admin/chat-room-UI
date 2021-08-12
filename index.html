@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--login screen styling-->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/account.css">
+
+    <!--firebase scripts-->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js" defer></script>
+    <script type='module' src="js/account.js" defer></script>
+
+    <title>Chatroom</title>
+</head>
+<body>
+    <header>
+        <h1>Chatroom</h1>
+    </header>
+
+    <main class="container">
+        <form class="login-form container">
+            <h2>Welcome</h2>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="Enter your username" required>
+            <button type="submit">Login</button>
+        </form>    
+    </main>
+
+</body>
+</html>
