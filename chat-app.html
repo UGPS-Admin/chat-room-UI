@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A mini chatroom application coded and developed by mayur dayal.">
+
+    <!--styling the app-->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
+    <!--date fns-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.8.0/date_fns.min.js" defer></script>
+
+    <!--firebase scripts-->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js" defer></script>
+    <script type='module' src="js/chatroom.js" defer></script>
+ 
+    <title>Chatroom</title>
+</head>
+<body>
+    <header>
+        <h1>Chatroom</h1>
+    </header>
+
+    <main class="container">
+        <section class="channels">
+            <ul>
+                <li class="active" id="general" title="Say Hi to the creator">General</li>
+                <li id="friends">Friends</li>
+                <li id="gaming">Gaming</li>
+                <li id="fix">Fix IT</li>
+            </ul>
+        </section>
+
+        <section class="message-render">
+            <ul></ul>
+        </section>
+
+        <section class="message-input">
+            <form class="message-form">
+                <input type="text" name="message" id="message" placeholder="Enter your message" required>
+                <button type="submit"><img src="/img/send-button.png" alt=""></button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
