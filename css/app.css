@@ -48,7 +48,7 @@ main {
   overflow-y: scroll;
   height: 75vh;
   font-family: "Overlock", cursive;
-  background-image: url("/img/login-screen-background.jpg");
+  background-image: url("../img/login-screen-background.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
